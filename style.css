@@ -157,6 +157,11 @@ body {
     width: 556px;
     height: 438px;
     padding-right: 50px;
+    transition: all linear .4s;
+}
+
+.highlights-image img:hover {
+    transform: scale(1.1);
 }
 
 /* Highlight end */
@@ -206,11 +211,11 @@ textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical
+    resize: vertical;
 }
 
 
@@ -303,7 +308,7 @@ input[type=submit]:hover {
 
 /* Mobile media query */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .header-part {
         grid-template-columns: 1fr;
         padding: 50px 0;
@@ -396,6 +401,8 @@ input[type=submit]:hover {
 
     .players {
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
 
     .highlights {
